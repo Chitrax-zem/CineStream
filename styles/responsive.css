@@ -1,0 +1,132 @@
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .content-section {
+        padding: 4rem 3%;
+    }
+    
+    .featured-section {
+        padding: 4rem 3%;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .logo {
+        order: 1;
+    }
+    
+    .mobile-menu-btn {
+        order: 2;
+        display: block;
+        margin-left: auto;
+    }
+    
+    .nav-links {
+        order: 4;
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .user-actions {
+        order: 3;
+        margin-left: auto;
+    }
+    
+    .search-bar {
+        order: 5;
+        width: 100%;
+        display: none;
+    }
+    
+    .search-bar.active {
+        display: flex;
+    }
+    
+    .hero {
+        height: auto;
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .featured-content {
+        max-width: 100%;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 6rem;
+    }
+    
+    .hero-content {
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .movie-card {
+        min-width: 200px;
+    }
+    
+    .modal-content {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .btn-primary, .btn-outline {
+        width: 100%;
+    }
+    
+    .continue-watching {
+        grid-template-columns: 1fr;
+    }
+    
+    .auth-tabs {
+        margin-bottom: 1.5rem;
+    }
+    
+    .tab-btn {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+}
